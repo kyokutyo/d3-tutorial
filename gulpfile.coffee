@@ -1,6 +1,6 @@
 gulp = require 'gulp'
 browserSync = require 'browser-sync'
-files = ['app/*.html', 'app/src/*.js']
+files = ['app/*.html', 'app/css/*.css', 'app/src/*.js']
 
 gulp.task 'browserSync', ->
   browserSync.init null,

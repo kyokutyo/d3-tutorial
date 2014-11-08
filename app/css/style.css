@@ -16,3 +16,9 @@ p {
   margin-right: 2px;
   width: 20px;
 }
+
+svg .pumpkin {
+  fill: yellow;
+  stroke: orange;
+  stroke-width: 5;
+}

@@ -43,4 +43,59 @@
            .attr("stroke-width", function(d) {
                return d/2;
            });
-})();
+
+    var numbers = [5, 10, 15, 20, 25];
+    for(var i = 0; i < numbers.length; i++) {
+        console.log(numbers[i]);
+    }
+
+    var fruit = {
+        kind: "ぶどう",
+        color: "赤",
+        quantity: 12,
+        tasty: true
+    };
+
+    var fruits = [
+        {
+            kind: "ぶどう",
+            color: "赤",
+            quantity: 12,
+            tasty: true
+        }, {
+            kind: "キウイ",
+            color: "茶色",
+            quantity: 98,
+            tasty: true
+        }, {
+            kind: "バナナ",
+            color: "黄色",
+            quantity: 0,
+            tasty: true
+        }
+    ];
+    console.log(fruits[1].kind);
+
+    var jsonFruit = {
+        "kind": "ぶどう",
+        "color": "赤",
+        "quantity": 12,
+        "tasty": true
+    };
+
+    var geodata = {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [150.1282427, -24.471803]
+                },
+                "properties": {
+                    "type": "town"
+                }
+            }
+        ]
+    };
+}());
